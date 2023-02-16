@@ -14,7 +14,7 @@ export const createProduct = async (req: Request, res: Response) => {
     }
 };
 
-// Get all products
+// Get all products with pagination implemented
 export const getAllProducts = async (req: Request, res: Response) => {
     const { page = 1, limit = 10 } = req.query;
 
